@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Physical Therapy Evaluation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="newcss.css">
+        <script src="newjavascript3.js"></script>
+    </head>
+    <body>
+        <fieldset>
+            <h1 id="page-title">Physical Therapy Evaluation.</h1>
+            <p>In preparation for your first appointment with Professional Physical Therapy, please visit our Patient Form.<br>
+                We suggest that you arrive 10-15 minutes before the start of your first scheduled appointment to complete our registration process.<br><br>  
+                Please be sure to:<br><br> 
+            - Bring the forms you completed at home.<br>
+            - Bring your insurance card or case number.<br>
+            - Bring your physical or occupational therapy prescription, if you have one.<br>
+            - Bring any relevant diagnostic reports you may have (for example, x-ray or MRI).<br>
+            - Wear comfortable clothes that will allow the therapist access to the body part you are having treated.<br></p>
+         
+        <div style="float:left; width:600px;">
+            <img style="width:100%" src=https://www.cmfgroup.com/wp-content/uploads/2018/05/CMF_Physical-Therapist-Desktop.svg alt="PTExercise"></div>                 
+        </fieldset>
+        <div style="clear:both;"></div>
+        <div id="questionary-box"><br>
+            <fieldset><br>
+            <form>
+                <span class="questionary-param">Name of Therapist:</span><br>
+                    <input type="text" id="Therapist-name" onblur="validateName('Therapist-name')" value="" title="Name of Therapist:" /><br><br>
+                <span class="questionary-param">Name of the Patient:</span><br>
+                <input type="text" id="Patient-name" onblur="validateName('Patient-name')" value="" title="Name of the Patient" /><br><hr><hr>
+                    <h2>Please answer YES or NO to the question in the section below</h2>
+                <h3>1. Have you experienced any major changes for the past year? </h3> 
+                    <input type="radio" name="Changes" value="YES" checked> Yes<br>
+                    <input type="radio" name="Changes" value="NO"> No<br>
+                <h3>2. Have you undergone any surgery?</h3>
+                    <input type="radio" name="Surgery" value="YES" checked> Yes<br>
+                    <input type="radio" name="Surgery" value="NO"> No<br>
+                <h2>Exercises.</h2>
+                <h3>3. How regularly do you exercise?</h3>
+                    <select name="How-regularly" size="1">
+                        <option value="Thrice Daily">Thrice Daily</option>
+                        <option value="Twice Daily">Twice Daily</option>
+                        <option value="Daily">Daily</option>
+                        <option value="Severally a week">Severally a week</option></select>
+                <h2>Health Habits.</h2>        
+                <h3>4. How ofter do you consume alcohol?</h3>   
+                    <select name="Alcohol" size="1">
+                        <option value="Ocassionally">Ocassionally</option>
+                        <option value="Regularly">Regularly</option>
+                        <option value="Heavily">Heavily</option>
+                        <option value="I don't drink">I don't drink</option></select><br>
+                <h3>5. Are you smoker? If yes, how many years do you smoke? Explain in the section below.</h3>     
+            <input type="radio" name="Smoker" value="YES" checked> Yes
+            <input type="number" name="Years" onblur="validateName('Years')" min="1" max="100"><br>
+            <input type="radio" name="Smoker" value="NO"> No<br>
+            <h2>Medications</h2> 
+            <h3>Has any medecine been prescribed? If yes, list it in the section below.</h3>
+            <input type="radio" name="Medecine" value="YES" checked> Yes<br>
+            <textarea name="Text-Medicine" rows="7" cols="30"></textarea><br>
+            <input type="radio" name="Medecine" value="NO"> No<br>                
+                <h2>Current Difficulties (Choose relevant answer).</h2>
+                    <input type="checkbox" name="Difficulties" value="WalkingProblem">Walking Problem<br>
+                    <input type="checkbox" name="Difficulties" value="Tiredness">Tiredness<br>
+                    <input type="checkbox" name="Difficulties" value="DifficultToSelfCare">Difficult to self care<br>
+                    <input type="checkbox" name="Difficulties" value="DifficultInWorking">Difficult in working<br>
+                <h2>General Health Observation.</h2>
+                <h3>Please rate your health (check where appropriate).</h3>
+                <span class="rateHealth-param"></span>
+                <span class="rateHealth-param"><span>
+                <span class="rateHealth-param"></span>
+                <span class="rateHealth-param"></span>
+                    <input type="radio" name="Rate-Health" value="Excellent" checked>Excellent<br>
+                    <input type="radio" name="Rate-Health" value="Good">Good<br>
+                    <input type="radio" name="Rate-Health" value="Fair">Fair<br>
+                    <input type="radio" name="Rate-Health" value="Poor">Poor<br><br>
+            <button type="button" onclick="onButtonClick()" id="Submit">Submit</button>
+            </form>
+            </fieldset>
+        </div>        
+    </body>
+</html>
