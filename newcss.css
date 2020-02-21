@@ -1,0 +1,25 @@
+body {
+    background-repeat: no-repeat;
+    background-color: whitesmoke;
+    }
+h1 {
+    color: darkblue;
+    font-weight: bold;
+    text-align: center;
+    font-size:300%;   
+    }
+p   {
+    class: instructions-paragraph1; 
+    color: darkblue;
+    font-weight: bold;
+    text-align: center;
+    }
+ h2 {
+    font-size: 150%;
+    font-weight: bold;
+    color: darkblue;
+    margin-left: 2em;
+    }   
+form {
+    background-color: whitesmoke;    
+}
